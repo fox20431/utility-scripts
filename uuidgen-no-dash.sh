@@ -1,2 +1,3 @@
 #!/bin/bash
-uuidgen | sed 's/-//g'
+
+cat /proc/sys/kernel/random/uuid | sed 's/-//g'
